@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DYNAMIC PART</title>
+    <link rel="shortcut icon" href="/img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <div class="modal fade" id="modal-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="exampleModalLabel">Get an offer</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form method="post" id="sendmail" name="sendmail" action="">
+                        <div class="row">
+                            <div class="col-12">
+                                <input required="" type="text" name="ad" class="effect" placeholder="Name">
+                            </div>
+                            <div class="col-12">
+                                <input required="" type="text" name="phone" class="effect" placeholder="Phone number">
+                            </div>
+                            <div class="col-12">
+                                <textarea rows="6" name="qeyd" class="effect" placeholder="Phone number"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <input class="btn submit-btn" type="submit" name="submit2" value="Submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <img src="/img/close-menu (1).png" class="btn-close-menu" alt="btn close" data-bs-dismiss="offcanvas"
+                aria-label="Close">
+        </div>
+        <div class="offcanvas-body">
+            <ul class="mobile-menu">
+                <li class="menu-item">
+                    <a class="menu-link" href="/">Ana səhifə</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="/haqqimizda/">Şirkət</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="/mehsullar/">Məhsullar</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="/xidmetler/">Xidmətlər</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="/bloqlar/">Bloqlar</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="/layiheler/">Layihələr</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="/sertifikatlar/">Sertifikatlar</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="/referanslar/">Referanslar</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="/elaqe/">Əlaqə</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <header class="header-main">
+        <div class="container-fluid">
+            <nav>
+                <a class="logo logo-header" href="/">
+                    <img src="/img/logo2.png" alt="DYNAMIC PART">
+                </a>
+
+                <ul class="menu">
+                    <li class="menu-item">
+                        <ul class="menu-drop">
+                            <li>
+                                <a href="/turkey/">Türkiye</a>
+                            </li>
+                            <li>
+                                <a href="/georgia/">Georgia</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a class="no-active__link">ABOUT COMPANY</a>
+                        <ul class="menu-drop">
+                            <li>
+                                <a href="/haqqinda/">About us</a>
+                            </li>
+                            <li>
+                                <a href="/missiyamiz/">Our mission</a>
+                            </li>
+                            <li>
+                                <a href="/sertifikatlar/">Certificates</a>
+                            </li>
+                            <li>
+                                <a href="/presentations/">Presentations</a>
+                            </li>
+
+                            <li>
+                                <a href="/referanslar/">References</a>
+                            </li>
+                            <li>
+                                <a href="/emekdaslar/">Collaborators</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/services/">SERVICES</a>
+                        <ul class="menu-drop">
+                            <li>
+                                <a href="/inspection/">Inspection</a>
+                            </li>
+
+                            <li>
+                                <a href="/laboratoriya/">Laboratory</a>
+                            </li>
+                            <li>
+                                <a href="/sertifikasiya/">Certification</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/projects/">PROJECTS</a>
+                        <ul class="menu-drop">
+                            <li>
+                                <a href="/bitmi-layiheler/">Completed projects</a>
+                            </li>
+                            <li>
+                                <a href="/davam-eden-layiheler/">Ongoing projects</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="/news/">NEWS</a></li>
+                    <li class="menu-item"><a href="/elaqe/">CONTACT</a></li>
+                    <!--<li class="nav-decor menu-item">|</li>
+                    <li class="menu-item lang-item"><a href="https://stv-eng.com/br/">En</a></li>
+                    <li class="menu-item lang-item"><a href="https://stv-eng.com/en/">Az</a></li>
+                    <li class="menu-item lang-item"><a href="https://stv-eng.com/ru/">Ru</a></li>-->
+                    <li class="btn-consultation " data-bs-toggle="modal" data-bs-target="#modal-form">
+                        <span href="">Get a consultation</span>
+                    </li>
+                </ul>
+                <div class="menu-btn-mobile" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">
+                    <div class="menu-btn-mobile__inner">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+    </header>
+    <main>
+        <section class="slider">
+            <div class="swiper swiper-header ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-1">
+                        <div class="container">
+                            <div class="swiper-text">
+                                <h2>Trust us</h2>
+                                <p>Thanks to the inspection, you are safe!</p>
+                                <div class="slide-btns">
+                                    <a class="swiper-slide__btn swiper-slide__btn-1">MORE DETAILS <span></span></a>
+                                    <a class="swiper-slide__btn swiper-slide__btn-2" data-bs-toggle="modal"
+                                        data-bs-target="#modal-form">Get a consultation<span></span></a>
+                                </div>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-2">
+                        <div class="container">
+                            <div class="swiper-text">
+                                <h2>Accuracy</h2>
+                                <p>Detailed inspection, safe future!</p>
+                                <div class="slide-btns">
+                                    <a class="swiper-slide__btn swiper-slide__btn-1">MORE DETAILS <span></span></a>
+                                    <a class="swiper-slide__btn swiper-slide__btn-2" data-bs-toggle="modal"
+                                        data-bs-target="#price-form">Get a consultation<span></span></a>
+                                </div>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-3">
+                        <div class="container">
+                            <div class="swiper-text">
+                                <h2>Safety</h2>
+                                <p>STV Engineering - the permanent and reliable address of your safety.</p>
+                                <div class="slide-btns">
+                                    <a class="swiper-slide__btn swiper-slide__btn-1">MORE DETAILS <span></span></a>
+                                    <a class="swiper-slide__btn swiper-slide__btn-2" data-bs-toggle="modal"
+                                        data-bs-target="#price-form">Get a consultation<span></span></a>
+                                </div>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-header-btns">
+                    <div class="button-prev">
+                        <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
+                    </div>
+                    <div class="button-next">
+                        <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about-main">
+            <div class="container about-main-container">
+                <div class="about_holder">
+                        <div class="about-image-boxes">
+                            <div class="about-img-box about-img-box1">
+                                <a href="/haqqimizda/" class="about-img-link">
+                                    <img class="about-img" src="https://mss-p-015-delivery.stylelabs.cloud/api/public/content/related-products-aed7e099cf3c4971ab3e55d3a9cbcd53?v=906705d0" alt="about image" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="about-img-box about-img-box2">
+                                <a href="/haqqimizda/" class="about-img-link">
+                                    <img class="about-img" src="https://komatsu.stylelabs.cloud/api/public/content/page_intro673d6d9202a24ae0b89a1cfb433ff6be?v=a1663402&amp;h=400&amp;w=720&amp;la=en" alt="about image" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="about-img-box about-img-box3">
+                                <a href="/haqqimizda/" class="about-img-link">
+                                    <img class="about-img" src="https://komatsu.stylelabs.cloud/api/public/content/ProductDetails_ccc043e4be304a1588d6c14f6be27f99?v=82749ae9&amp;h=520&amp;w=650&amp;la=en" alt="about image" loading="lazy">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="about-info-box">
+                            <p class="oneLine-truncate about-subTitle fw-bold fs-3">
+                                DYNAMIC PART
+                            </p>
+                            <h2 class="twoLine-truncate about-title">
+                                About us
+                            </h2>
+                            <p class="threeLine-truncate about-desc">
+                                Our company specializes in the sale of high-quality spare parts for heavy-duty machinery and special equipment. With years of experience in the industry, we understand the importance of reliable and durable components for maintaining the performance of your equipment. We offer a wide range of parts for construction, mining, agricultural, and other types of specialized machinery, ensuring that your equipment operates efficiently and with minimal downtime.
+                            </p>
+                            <a href="/haqqimizda/" class="about-more-link">
+                                <span>More </span>
+                                <img src="https://biyanaz.com/img/see-more.png" alt="right-arrow" loading="lazy">
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section class="section-map">
+            <div class="container">
+                <div class="section-map__inner">
+                    <div class="section-map__img">
+                        <img src="/img/map.png" alt="DYNAMIC PART">
+                    </div>
+                    <div class="section-map__text">
+                        <h2>We Spread Around The World</h2>
+                        <p>Laoreet lorem consectetuer hendrerit dictumst curae volutpat cubilia elit velit natoque.
+                            Eleifend
+                            diam volutpat lectus aliquam aenean. Dolor sed orci scelerisque taciti sodales tortor.</p>
+                            <div class="section-map__boxes">
+                                <div class="boxes">
+                                    <div>
+                                        <span>25 +</span>
+                                        <span>Years of Experience</span>
+                                    </div>
+                                    <div>
+                                        <span>77</span>
+                                        <span>Office Worldwide</span>
+                                    </div>
+                                    <div>
+                                        <span>38K</span>
+                                        <span>Workers Employed</span>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d4a8753bf6.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/index.js">
+
+    </script>
+</body>
+
+</html>
